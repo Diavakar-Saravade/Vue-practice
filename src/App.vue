@@ -1,19 +1,18 @@
 <template>
-  <!-- <HelloWorld msg="Hello World!" />
-  <HelloWorld msg="Hello Vue!" /> -->
+  <HelloWorld />
   <FirstVue />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import FirstVue from './components/FirstVue.vue'
+import HelloWorld from './components/HelloWorld.vue'
+
 
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    FirstVue,
+     HelloWorld,
+    
   }
 }
 </script>
