@@ -1,19 +1,20 @@
 <template>
   <HelloWorld />
   <FirstVue />
+  <conditionalRendering/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import conditionalRendering from './components/conditionalRendering.vue'
 
 
 export default {
   name: 'App',
   components: {
-     HelloWorld,
-    
-  }
+    HelloWorld,
+    conditionalRendering,
+}
 }
 </script>
 

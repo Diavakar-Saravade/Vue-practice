@@ -14,6 +14,20 @@
    <!-- class binding and adding css class underline dynamically -->
    <h2  class="underline" v-bind:class="status">Sucessfull</h2>
    <h2 v-bind:class="isPromoted && 'promoted'">Good Vibes</h2>
+
+   <!-- inline styles using objects -->
+   <h2 v-bind:style="{
+    color:highLightColor,
+    // because font-size is not a single word therefore we have to write in '' and  
+    //therefore it a no in headersize: 50 so we need to write 'px' to get the no 
+    'font-size':headerSize +'px',
+    padding:'20px',
+   }">Inline Style</h2>
+   <!-- giving css to object directly -->
+   <h2 v-bind:style="headerStyleObject">this is css by using objects</h2>
+   <!-- giving css in arrays directly -->
+   <h2 v-bind:style="[baseStyleObject,sucessStyleObject]">Success Style Object</h2>
+
 </template>
 
 <script>
@@ -30,6 +44,27 @@ export default {
       isDisabled:true,
       status:'Success',
       isPromoted: true,
+      highLightColor: 'orange',
+      headerSize:50,
+
+      //giving css directly in objects 
+      headerStyleObject:{
+        color:'orange',
+        fontSize:'55px',
+        padding:'20px',
+      },
+
+      baseStyleObject:{
+        fontSize:'50px',
+        padding:'20px',
+      },
+      sucessStyleObject:{
+        color:'green',
+        backgroundColor:'lightgreen',
+        border:'1px solid green',
+      },
+      
+
     }
   },
 
