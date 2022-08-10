@@ -2,11 +2,13 @@
   <HelloWorld />
   <FirstVue />
   <conditionalRendering/>
+  <listRendering/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import conditionalRendering from './components/conditionalRendering.vue'
+import listRendering from './components/listRendering.vue'
 
 
 export default {
@@ -14,6 +16,7 @@ export default {
   components: {
     HelloWorld,
     conditionalRendering,
+    listRendering,
 }
 }
 </script>
